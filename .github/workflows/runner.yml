@@ -1,0 +1,16 @@
+name: main Runner
+
+on: workflow_dispatch
+
+jobs:
+  job-one:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checking out repo...
+      uses: actions/checkout@v3
+
+    - name: Printing the secret...
+      run: |
+        echo "Secret value : "
+        echo ${secrets.MY_NAME}
