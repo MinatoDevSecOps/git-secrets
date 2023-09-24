@@ -13,4 +13,4 @@ jobs:
     - name: Printing the secret...
       run: |
         echo "Secret value : "
-        echo ${{secrets.MY_NAME}}
+        echo ${{secrets.MY_NAME}} | grep N
